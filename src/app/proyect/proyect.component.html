@@ -1,0 +1,66 @@
+<div class="p-5 mx-auto bg-white" id="proyect">
+  <div>
+    <h1 class="text-base font-semibold text-gray-500 border-b-2">PROYECTS</h1>
+    <!-- LEFTH -->
+    <div class="flex flex-col text-gray-500 md:flex-row">
+      <div class="w-full mb-0 md:w-1/2">
+        <swiper
+          [spaceBetween]="30"
+          [centeredSlides]="true"
+          [autoplay]="{
+            delay: 2500,
+            disableOnInteraction: false
+          }"
+          [pagination]="{
+            clickable: true
+          }"
+          [navigation]="true"
+          class="mySwiper"
+        >
+          <ng-template swiperSlide class="flex items-center justify-center"
+            ><img
+              src="../../assets/galery-proyects/img1.jpeg"
+              class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 drop-shadow-md mb-7" /></ng-template
+          ><ng-template swiperSlide class="flex items-center justify-center"
+            ><img
+              src="../../assets/galery-proyects/img2.jpeg"
+              class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 mb-7 drop-shadow-md" /></ng-template
+          ><ng-template swiperSlide class="flex items-center justify-center"
+            ><img
+              src="../../assets/galery-proyects/img3.jpeg"
+              class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 mb-7 drop-shadow-md" /></ng-template
+          ><ng-template swiperSlide class="flex items-center justify-center"
+            ><img
+              src="../../assets/galery-proyects/img4.jpeg"
+              class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 mb-7 drop-shadow-md"
+          /></ng-template>
+        </swiper>
+      </div>
+      <div
+        class="md:px-5 md:w-1/2 md:max-h-max md:border-l-2 md:border-gray-200"
+      >
+        <h1 class="p-0 m-0 text-sm font-semibold">
+          <span class="mr-3 underline">Title:</span
+          ><span class="italic">"PIZARRA DIGITAL WEB"</span>
+        </h1>
+        <h1 class="p-0 m-0 text-sm font-semibold">
+          <span class="mr-3 underline">Aplication:</span>
+          <a class="italic text-teal-500 cursor-pointer" href="">link</a>
+        </h1>
+        <h1 class="p-0 m-0 text-sm font-semibold">
+          <span class="mr-3 underline">Repository:</span
+          ><a class="italic text-teal-500 cursor-pointer" href="">GitHub</a>
+        </h1>
+        <h1 class="p-0 mb-1 text-sm font-semibold underline">Description:</h1>
+        <p class="p-0 ml-5 text-xs italic text-justify">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          veniam molestiae a necessitatibus aut, ratione vel odio eum facere ex
+          dignissimos repellendus consequatur dolores. Saepe consequuntur ullam
+          ab fuga commodi?
+        </p>
+      </div>
+    </div>
+    <!-- RIGHT -->
+    <div></div>
+  </div>
+</div>
