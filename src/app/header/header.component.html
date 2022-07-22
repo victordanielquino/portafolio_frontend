@@ -1,13 +1,17 @@
 <nav class="nav">
   <div class="container flex items-center justify-between h-16 md:h-20">
     <!-- LOGO Y TITLE -->
-    <h1 class="relative z-30 text-2xl font-semibold">Victor Quino</h1>
+    <h1 class="relative z-30 p-0 m-0 text-2xl font-semibold">Victor Quino</h1>
 
     <!-- LOGO END -->
     <!-- MENU AMBURGUESA CLOSE -->
     <div class="flex flex-row-reverse items-center gap-3 md:flex-row md:gap-12">
       <!-- MENU LIST -->
-      <ul id="menu" class="nav-menus">
+      <ul
+        id="menu"
+        class="nav-menus translate-y-[-110%] md:translate-y-0"
+        [ngClass]="isMenuOpen ? 'translate-y-0' : 'translate-y-[-110%]'"
+      >
         <a class="nav-link" href="#home">Home</a>
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -17,15 +21,16 @@
       <!-- MENU MOVIL -->
       <button
         id="toggle-menu"
-        class="relative z-30 w-20 p-2 bg-red-400 md:hidden dark:invert"
+        class="relative z-30 p-2 md:hidden dark:invert"
+        (click)="toggleMenu()"
       >
-        <svg viewBox="0 0 32 32">
-          <g data-name="Layer 2" id="Layer_2">
-            <path d="M28,10H4A1,1,0,0,1,4,8H28a1,1,0,0,1,0,2Z" />
-            <path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
-            <path d="M28,24H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z" />
-          </g>
-          <g id="frame"><rect class="cls-1" height="32" width="32" /></g>
+        <svg
+          class="w-5 h-5 fill-current"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
         </svg>
       </button>
     </div>

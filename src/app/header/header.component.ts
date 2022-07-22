@@ -6,12 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  isMenuOpen = true;
+  isMenuOpen = false;
   constructor() {}
 
   ngOnInit(): void {}
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
+  }
+  handeClick(): void {
+    console.log('click');
   }
 }
