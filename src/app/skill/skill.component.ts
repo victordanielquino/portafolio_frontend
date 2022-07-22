@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skill.component.scss'],
 })
 export class SkillComponent implements OnInit {
-  width: number = 10; // 10, 12, 14, 16, 20, 24, 28, 32
-  height: number = 10;
+  width: string = '10'; // 10, 12, 14, 16, 20, 24, 28, 32
+  height: string = '10';
   constructor() {}
 
   ngOnInit(): void {}

@@ -19,19 +19,24 @@
         >
           <ng-template swiperSlide class="flex items-center justify-center"
             ><img
-              src="../../assets/galery-proyects/img1.jpeg"
+              src="../../assets/galery-proyects/pro1/1.png"
               class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 drop-shadow-md mb-7" /></ng-template
           ><ng-template swiperSlide class="flex items-center justify-center"
             ><img
-              src="../../assets/galery-proyects/img2.jpeg"
+              src="../../assets/galery-proyects/pro1/2.png"
               class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 mb-7 drop-shadow-md" /></ng-template
           ><ng-template swiperSlide class="flex items-center justify-center"
             ><img
-              src="../../assets/galery-proyects/img3.jpeg"
+              src="../../assets/galery-proyects/pro1/3.png"
               class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 mb-7 drop-shadow-md" /></ng-template
           ><ng-template swiperSlide class="flex items-center justify-center"
             ><img
-              src="../../assets/galery-proyects/img4.jpeg"
+              src="../../assets/galery-proyects/pro1/4.png"
+              class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 mb-7 drop-shadow-md"
+          /></ng-template>
+          <ng-template swiperSlide class="flex items-center justify-center"
+            ><img
+              src="../../assets/galery-proyects/pro1/5.png"
               class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 mb-7 drop-shadow-md"
           /></ng-template>
         </swiper>
@@ -45,18 +50,32 @@
         </h1>
         <h1 class="p-0 m-0 text-sm font-semibold">
           <span class="mr-3 underline">Aplication:</span>
-          <a class="italic text-teal-500 cursor-pointer" href="">link</a>
+          <a
+            class="italic text-teal-500 cursor-pointer"
+            href="{{ proyect_1 }}"
+            target="_blank"
+            >link</a
+          >
         </h1>
         <h1 class="p-0 m-0 text-sm font-semibold">
           <span class="mr-3 underline">Repository:</span
-          ><a class="italic text-teal-500 cursor-pointer" href="">GitHub</a>
+          ><a
+            class="italic text-teal-500 cursor-pointer"
+            href="{{ github_1 }}"
+            target="_blank"
+            >GitHub</a
+          >
         </h1>
         <h1 class="p-0 mb-1 text-sm font-semibold underline">Description:</h1>
         <p class="p-0 ml-5 text-xs italic text-justify">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi
-          veniam molestiae a necessitatibus aut, ratione vel odio eum facere ex
-          dignissimos repellendus consequatur dolores. Saepe consequuntur ullam
-          ab fuga commodi?
+          Esta es una aplicación web destina a ayudar a estudiantes de colegios
+          y profesores del area de matemáticas. Las vondades de esta aplicacion
+          se resumen en juntar algunas características de google y la api
+          mathio, la generacion de grificos de geométria análitica de geogebra y
+          la pizarra de OpenBoard. Esta aplicación esta desarrollada bajo la
+          libreria de React, se usa Sass y Material UI para el manejo de estilo
+          y componentes, se uso Firebase de Google para almacenar imagenes y
+          pdfs. La aplicación puede generar un reporte PDF desde el front.
         </p>
       </div>
     </div>

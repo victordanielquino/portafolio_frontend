@@ -12,6 +12,8 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
   styleUrls: ['./proyect.component.scss'],
 })
 export class ProyectComponent implements OnInit {
+  proyect_1: string = 'https://victordanielquino.github.io/mathboard_prod/';
+  github_1: string = 'https://github.com/victordanielquino/mathboard_prod';
   constructor() {}
 
   ngOnInit(): void {}
