@@ -7,7 +7,30 @@
     <h3 class="p-0 mt-5 mb-10 text-2xl font-bold opacity-70 md:text-3xl">
       Ingeniero de Sistemas Informáticos
     </h3>
-    <a href="#portfolio" class="btn-primary">Ver mis trabajos</a>
+    <!-- <button (click)="downloadPdf()" class="btn-primary">
+      Descargar Curriculum
+    </button> -->
+    <!-- https://firebasestorage.googleapis.com/v0/b/storage-personal-4d316.appspot.com/o/pdfs%2FCURRICULUM%20VITAE%20Victor%20Daniel%20Quino%20Jimenez.pdf?alt=media&token=928634c3-27fa-49bb-ae0f-7ead71eb239a -->
+    <a
+      href="{{ pdfSrc }}"
+      target="_blank"
+      class="flex justify-center w-52 btn-primary"
+    >
+      <svg
+        class="w-6 h-6 mr-1 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-fontSizeLarge css-zjt8k"
+        focusable="false"
+        aria-hidden="true"
+        viewBox="0 0 24 24"
+        data-testid="PictureAsPdfIcon"
+        tabindex="-1"
+        title="PictureAsPdf"
+      >
+        <path
+          d="M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8.5 7.5c0 .83-.67 1.5-1.5 1.5H9v2H7.5V7H10c.83 0 1.5.67 1.5 1.5v1zm5 2c0 .83-.67 1.5-1.5 1.5h-2.5V7H15c.83 0 1.5.67 1.5 1.5v3zm4-3H19v1h1.5V11H19v2h-1.5V7h3v1.5zM9 9.5h1v-1H9v1zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm10 5.5h1v-3h-1v3z"
+        ></path>
+      </svg>
+      Descargar Curriculum
+    </a>
   </div>
   <div class="container-hero-image">
     <img
