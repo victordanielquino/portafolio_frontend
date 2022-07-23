@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isMenuOpen = false;
+  isDark = false;
   constructor() {}
 
   ngOnInit(): void {}
@@ -14,7 +15,9 @@ export class HeaderComponent implements OnInit {
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;
   }
-  handeClick(): void {
-    console.log('click');
+  toogleTheme(): void {
+    this.isDark = !this.isDark;
+    const html = document.querySelector('html');
+    html?.classList.toggle('dark');
   }
 }
