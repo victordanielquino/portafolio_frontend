@@ -1,4 +1,7 @@
-<div class="flex items-center justify-between w-full gap-3 mb-10">
+<div
+  class="flex items-center justify-between w-full gap-3 mb-10"
+  id="portfolio"
+>
   <div class="w-4 h-3 bg-primary-default/60"></div>
   <div class="w-4 h-3 bg-primary-default/60"></div>
   <div class="w-4 h-3 bg-primary-default/60"></div>
@@ -91,22 +94,28 @@
         <div class="w-full md:w-1/3 h-60">
           <img
             class="object-cover w-full h-full"
-            src="../../assets/galery-proyects/img1.jpeg"
+            src="../../assets/galery-proyects/proyecto2.png"
             alt="portafolio"
           />
         </div>
         <div class="w-full p-5 md:w-2/3">
-          <h2 class="mb-3 text-3xl font-bold">Proyecto 1</h2>
+          <h2 class="mb-3 text-3xl font-bold">My Blog: Backend</h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-            possimus et rerum quisquam temporibus soluta a fugiat tenetur
-            consequuntur tempora eligendi in accusamus mollitia, laudantium
-            delectus reiciendis culpa commodi saepe.
+            Este es el BackEnd de un blog en linea. Las vondades de esta
+            aplicación son: fue desarrolla con NodeJS y el Framework NestJS,
+            esta alojada y funcionando en heroku con postgres. La base de datos
+            esta relacionada al ORM TypeORM. Usa ByCript para tener contraseñas
+            encriptadas en la Base de Datos, JWT para autenticación de usuarios
+            y AccessControl para el control de roles de usuario.
           </p>
           <div
             class="flex items-center gap-2 mt-8 font-semibold text-white justify-evenly"
           >
-            <a href="" class="portfolio-link bg-primary-default">
+            <a
+              href="{{ github_2 }}"
+              target="_blank"
+              class="portfolio-link bg-primary-default"
+            >
               <svg
                 class="w-5 h-5 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-fontSizeLarge css-zjt8k"
                 focusable="false"
@@ -122,7 +131,8 @@
               >GitHub</a
             >
             <a
-              href=""
+              href="{{ proyect_2 }}"
+              target="_blank"
               class="portfolio-link bg-primary-gray dark:bg-primary-black"
             >
               <span class="bg-white rounded-full">
@@ -151,22 +161,29 @@
         <div class="w-full md:w-1/3 h-60">
           <img
             class="object-cover w-full h-full"
-            src="../../assets/galery-proyects/img1.jpeg"
+            src="../../assets/galery-proyects/proyecto3.png"
             alt="portafolio"
           />
         </div>
         <div class="w-full p-5 md:w-2/3">
-          <h2 class="mb-3 text-3xl font-bold">Proyecto 1</h2>
+          <h2 class="mb-3 text-3xl font-bold">
+            My Store: Backen: NodeJS + NestJS
+          </h2>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente
-            possimus et rerum quisquam temporibus soluta a fugiat tenetur
-            consequuntur tempora eligendi in accusamus mollitia, laudantium
-            delectus reiciendis culpa commodi saepe.
+            Este proyecto es el Backend de un tienda en linea, las vondades de
+            desta aplicación son: Esta desarrollada con NodeJS y el Framework de
+            NestJS, usa Postgres y TypeORM para administrar la base de datos,
+            usa JWS, ByCript y Esta alojada en Heroku ademas de estar
+            documentado.
           </p>
           <div
             class="flex items-center gap-2 mt-8 font-semibold text-white justify-evenly"
           >
-            <a href="" class="portfolio-link bg-primary-default">
+            <a
+              href="{{ github_3 }}"
+              target="_blank"
+              class="portfolio-link bg-primary-default"
+            >
               <svg
                 class="w-5 h-5 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-fontSizeLarge css-zjt8k"
                 focusable="false"
@@ -182,7 +199,8 @@
               >GitHub</a
             >
             <a
-              href=""
+              href="{{ proyect_3 }}"
+              target="_blank"
               class="portfolio-link bg-primary-gray dark:bg-primary-black"
             >
               <span class="bg-white rounded-full">
@@ -207,6 +225,14 @@
       </div>
     </li>
   </ul>
+  <div class="mt-10 align-middle">
+    <a
+      href="https://github.com/victordanielquino?tab=repositories"
+      target="_blank"
+      class="btn-primary"
+      >Ver mas trabajos en GitHub</a
+    >
+  </div>
 </section>
 
 <!-- <div class="p-5 mx-auto bg-white xl:mx-40" id="proyect">

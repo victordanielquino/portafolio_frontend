@@ -84,7 +84,7 @@
       flex items-center justify-center
       bg-white dark:bg-primary-gray
       w-28 h-28
-      rounded-full cursor-pointer;
+      rounded-full;
   }
   .skill::before {
     content: attr(data-text);

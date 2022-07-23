@@ -14,6 +14,13 @@ SwiperCore.use([Autoplay, Pagination, Navigation]);
 export class ProyectComponent implements OnInit {
   proyect_1: string = 'https://victordanielquino.github.io/mathboard_prod/';
   github_1: string = 'https://github.com/victordanielquino/mathboard_prod';
+  proyect_2: string = 'https://frozen-castle-28372.herokuapp.com/docs';
+  github_2: string =
+    'https://github.com/victordanielquino/my-blog-backend-nestjs';
+  proyect_3: string = 'https://secret-ridge-92945.herokuapp.com/docs/';
+  github_3: string =
+    'https://github.com/victordanielquino/my-store-backend-nestjs';
+
   constructor() {}
 
   ngOnInit(): void {}
