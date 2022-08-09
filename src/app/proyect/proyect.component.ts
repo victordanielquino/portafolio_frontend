@@ -17,7 +17,7 @@ export class ProyectComponent implements OnInit {
   proyect_2: string = 'https://frozen-castle-28372.herokuapp.com/docs';
   github_2: string =
     'https://github.com/victordanielquino/my-blog-backend-nestjs';
-  proyect_3: string = 'https://secret-ridge-92945.herokuapp.com/docs/';
+  proyect_3: string = 'https://vdqj-tiendavirtual.herokuapp.com/docs';
   github_3: string =
     'https://github.com/victordanielquino/my-store-backend-nestjs';
 
