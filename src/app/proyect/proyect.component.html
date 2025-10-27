@@ -14,307 +14,194 @@
     class="flex-grow h-3 bg-gradient-to-r from-primary-default/60 to-primary-default/0"
   ></div>
 </div>
-<!-- proyect -->
+
 <section class="mb-20">
   <h2 class="p-0 text-4xl portfolio-heading">Proyectos:</h2>
   <ul class="w-full py-5 space-y-10">
+
+    <!-- 1) Portal VUCE - Aduana Nacional -->
+    <li class="flex justify-start w-full">
+      <div class="portfolio-card md:w-5/6">
+        <div class="w-full md:w-1/3 h-60">
+          <img
+            class="object-cover w-full h-full"
+            src="../../assets/galery-proyects/portal.png"
+            alt="Portal VUCE de la Aduana Nacional de Bolivia"
+          />
+        </div>
+        <div class="w-full p-5 md:w-2/3">
+          <h2 class="mb-3 text-3xl font-bold">Portal VUCE — Aduana Nacional</h2>
+          <p>
+            Portal institucional de la Ventanilla Única de Comercio Exterior (VUCE) para la Aduana Nacional,
+            desplegado en producción en <strong>2024</strong>. Elaborado en Drupal 9, con acceso general.
+          </p>
+          <div class="flex items-center gap-2 mt-8 font-semibold text-white justify-evenly">
+            <a href="{{ vuce_portal_site }}" target="_blank" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+              <span class="bg-white rounded-full">
+                <!-- Globe icon -->
+                <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56z"/></svg>
+              </span>
+              Website
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 2) Plataforma VUCE - Acceso OCE / Ciudadanía Digital -->
+    <li class="flex justify-end w-full">
+      <div class="portfolio-card md:w-5/6">
+        <div class="w-full md:w-1/3 h-60">
+          <img
+            class="object-cover w-full h-full"
+            src="../../assets/galery-proyects/plataforma.png"
+            alt="Plataforma VUCE"
+          />
+        </div>
+        <div class="w-full p-5 md:w-2/3">
+          <h2 class="mb-3 text-3xl font-bold">Plataforma VUCE — Aduana Nacional</h2>
+          <p>
+            Plataforma del proyecto VUCE que permite autenticación e ingreso para usuarios <strong>OCE</strong> del sistema <strong>SUMA</strong>
+            y <strong>Ciudadanía Digital</strong>, amboso con (OIDC). Arquitectura de <strong>microservicios</strong>
+            consumo de APIs transversales y trazabilidad de trámites. Integración con entidades del Estado, uso de <strong>JWT/JWS</strong> para firma/autenticación
+            y despliegue con CI/CD.
+          </p>
+          <div class="flex items-center gap-2 mt-8 font-semibold text-white justify-evenly">
+            <a href="{{ vuce_plataforma_site }}" target="_blank" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+              <span class="bg-white rounded-full">
+                <!-- Globe icon -->
+                <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2z"/></svg>
+              </span>
+              Website
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 3) Colab / Airflow / IA (plantilla para que pegues tus enlaces) -->
+    <li class="flex justify-start w-full">
+      <div class="portfolio-card md:w-5/6">
+        <div class="w-full md:w-1/3 h-60">
+          <img
+            class="object-cover w-full h-full"
+            src="../../assets/galery-proyects/airflow.png"
+            alt="Proyecto de Ciencia de Datos con Google Colab y Apache Airflow"
+          />
+        </div>
+        <div class="w-full p-5 md:w-2/3">
+          <h2 class="mb-3 text-3xl font-bold">Machine Learnin and Data Science</h2>
+          <p>
+            Conjunto de notebooks y pipelines para ingestión, limpieza y modelado con <strong>Google Colab</strong> y
+            <strong>Apache Airflow</strong>. Incluye ETL hacia <strong>MongoDB</strong> y <strong>PostgreSQL</strong>,
+            orquestación con DAGs, y experimentos de <strong>Machine Learning</strong> (NLP/Clustering/Predictivo).
+          </p>
+          <div class="flex items-center gap-2 mt-8 font-semibold text-white justify-evenly">
+            <a href="{{ colab_url }}" target="_blank" class="portfolio-link bg-primary-default">
+              <!-- Colab icon (simple) -->
+              <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M10 7a5 5 0 100 10h1V7h-1zm4 0v10h1a5 5 0 100-10h-1z"/>
+              </svg>
+              Abrir Colab
+            </a>
+            <a href="{{ airflow_demo_url }}" target="_blank" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+              <span class="bg-white rounded-full">
+                <!-- Airflow-ish icon -->
+                <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></svg>
+              </span>
+              Ver DAG/Docs
+            </a>
+            <a href="{{ repo_data_url }}" target="_blank" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+              <span class="bg-white rounded-full">
+                <!-- Repo icon -->
+                <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v16H4zM8 8h8v2H8zM8 12h8v2H8z"/></svg>
+              </span>
+              Repo / README
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 3) Colab / Airflow / IA (plantilla para que pegues tus enlaces) -->
+    <li class="flex justify-end w-full">
+      <div class="portfolio-card md:w-5/6">
+        <div class="w-full md:w-1/3 h-60">
+          <img
+            class="object-cover w-full h-full"
+            src="../../assets/galery-proyects/firmadigital.png"
+            alt="Proyecto de Ciencia de Datos con Google Colab y Apache Airflow"
+          />
+        </div>
+        <div class="w-full p-5 md:w-2/3">
+          <h2 class="mb-3 text-3xl font-bold">Firma Digital con JACOBITUS</h2>
+          <p>
+            Proyecto desarrollado para integrar firma digital usando <strong>JACOBITUS</strong> que permite firmar documentos electrónicos pdf. Esta solución se alinea al ecosistema de certificación de la ADSIB, garantizando validez legal, trazabilidad y verificación mediante códigos QR. Este proyecto fue diseñado como demo para su implementación en el sistema SUMA de Aduana Nacional. Este proyecto se integro al modulo de SUMA en la gestion 2024.
+          </p>
+          <div class="flex items-center gap-2 mt-8 font-semibold text-white justify-evenly">
+            <a href="{{ firma_digital_repo }}" target="_blank" class="portfolio-link bg-primary-default">
+              <!-- Colab icon (simple) -->
+              <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M10 7a5 5 0 100 10h1V7h-1zm4 0v10h1a5 5 0 100-10h-1z"/>
+              </svg>
+              Repo / README
+            </a>
+            <a href="{{ firma_digital_site }}" target="_blank" class="portfolio-link bg-primary-gray dark:bg-primary-black">
+              <span class="bg-white rounded-full">
+                <!-- Airflow-ish icon -->
+                <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"/></svg>
+              </span>
+              Website
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+
+    <!-- 4) Pizarra Digital Web (SE MANTIENE) -->
     <li class="flex justify-start w-full">
       <div class="portfolio-card md:w-5/6">
         <div class="w-full md:w-1/3 h-60">
           <img
             class="object-cover w-full h-full"
             src="../../assets/galery-proyects/pro1/4.png"
-            alt="portafolio"
+            alt="Pizarra Digital Web para educación matemática"
           />
         </div>
         <div class="w-full p-5 md:w-2/3">
           <h2 class="mb-3 text-3xl font-bold">Proyecto: Pizarra Digital Web</h2>
           <p>
-            Esta es una aplicación web destina a ayudar a estudiantes de
-            colegios y profesores del area de matemáticas. Las vondades de esta
-            aplicacion se resumen en juntar algunas características de la
-            libreria MathIO de Google para generar texto Matemático, generacion
-            del plano cartesiano y graficos de geomentria analítica de manera
-            dinamica también cuenta con un canvas donde se puede rayar. Esta
-            aplicación esta desarrollada bajo la libreria de React haciendo uso
-            de Hooks, se usa Sass y Material UI para el manejo de estilo y
-            componentes, tambien se uso Firebase de Google para almacenar
-            imagenes y pdfs.
+            Aplicación web para docentes y estudiantes de matemáticas. Integra <strong>MathJax/MathML</strong>
+            para notación, generación de <strong>plano cartesiano</strong> y gráficos de geometría analítica,
+            además de un <strong>canvas</strong> para escritura libre. Tecnologías: <strong>React (Hooks)</strong>,
+            <strong>Sass</strong>, <strong>MUI</strong> y <strong>Firebase</strong> para almacenamiento de imágenes/PDF.
           </p>
-          <div
-            class="flex items-center gap-2 mt-8 font-semibold text-white justify-evenly"
-          >
-            <a
-              target="_blank"
-              href="{{ github_1 }}"
-              class="portfolio-link bg-primary-default"
-            >
-              <svg
-                class="w-5 h-5 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-fontSizeLarge css-zjt8k"
-                focusable="false"
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                data-testid="GitHubIcon"
-                tabindex="-1"
-                title="GitHub"
-              >
-                <path
-                  d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-                ></path></svg
-              >GitHub</a
-            >
-            <a
-              href="{{ proyect_1 }}"
-              target="_blank"
-              class="portfolio-link bg-primary-gray dark:bg-primary-black"
-            >
+          <div class="flex items-center gap-2 mt-8 font-semibold text-white justify-evenly">
+            <a target="_blank" href="{{ github_1 }}" class="portfolio-link bg-primary-default">
+              <!-- GitHub icon -->
+              <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"/></svg>
+              GitHub
+            </a>
+            <a href="{{ proyect_1 }}" target="_blank" class="portfolio-link bg-primary-gray dark:bg-primary-black">
               <span class="bg-white rounded-full">
-                <svg
-                  class="w-5 h-5 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-fontSizeLarge css-zjt8k"
-                  focusable="false"
-                  aria-hidden="true"
-                  viewBox="0 0 24 24"
-                  data-testid="LanguageIcon"
-                  tabindex="-1"
-                  title="Language"
-                >
-                  <path
-                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"
-                  ></path>
-                </svg>
+                <!-- Globe icon -->
+                <svg class="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2z"/></svg>
               </span>
-              Website</a
-            >
+              Website
+            </a>
           </div>
         </div>
       </div>
     </li>
-    <li class="flex justify-end w-full">
-      <div class="portfolio-card md:w-5/6">
-        <div class="w-full md:w-1/3 h-60">
-          <img
-            class="object-cover w-full h-full"
-            src="../../assets/galery-proyects/proyecto2.png"
-            alt="portafolio"
-          />
-        </div>
-        <div class="w-full p-5 md:w-2/3">
-          <h2 class="mb-3 text-3xl font-bold">My Blog: Backend</h2>
-          <p>
-            Este es el BackEnd de un blog en linea. Las vondades de esta
-            aplicación son: fue desarrolla con NodeJS y el Framework NestJS,
-            esta alojada y funcionando en heroku con postgres. La base de datos
-            esta relacionada al ORM TypeORM. Usa ByCript para tener contraseñas
-            encriptadas en la Base de Datos, JWT para autenticación de usuarios
-            y AccessControl para el control de roles de usuario.
-          </p>
-          <div
-            class="flex items-center gap-2 mt-8 font-semibold text-white justify-evenly"
-          >
-            <a
-              href="{{ github_2 }}"
-              target="_blank"
-              class="portfolio-link bg-primary-default"
-            >
-              <svg
-                class="w-5 h-5 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-fontSizeLarge css-zjt8k"
-                focusable="false"
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                data-testid="GitHubIcon"
-                tabindex="-1"
-                title="GitHub"
-              >
-                <path
-                  d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-                ></path></svg
-              >GitHub</a
-            >
-            <a
-              href="{{ proyect_2 }}"
-              target="_blank"
-              class="portfolio-link bg-primary-gray dark:bg-primary-black"
-            >
-              <span class="bg-white rounded-full">
-                <svg
-                  class="w-5 h-5 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-fontSizeLarge css-zjt8k"
-                  focusable="false"
-                  aria-hidden="true"
-                  viewBox="0 0 24 24"
-                  data-testid="LanguageIcon"
-                  tabindex="-1"
-                  title="Language"
-                >
-                  <path
-                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"
-                  ></path>
-                </svg>
-              </span>
-              Website</a
-            >
-          </div>
-        </div>
-      </div>
-    </li>
-    <li class="flex justify-start w-full">
-      <div class="portfolio-card md:w-5/6">
-        <div class="w-full md:w-1/3 h-60">
-          <img
-            class="object-cover w-full h-full"
-            src="../../assets/galery-proyects/proyecto3.png"
-            alt="portafolio"
-          />
-        </div>
-        <div class="w-full p-5 md:w-2/3">
-          <h2 class="mb-3 text-3xl font-bold">
-            Tienda Virtual: Backen: NodeJS + NestJS
-          </h2>
-          <p>
-            Este proyecto es el Backend de un tienda en linea, las vondades de
-            desta aplicación son: Esta desarrollada con NodeJS y el Framework de
-            NestJS, usa Postgres y TypeORM para administrar la base de datos,
-            usa JWS, ByCript y Esta alojada en Heroku ademas de estar
-            documentado.
-          </p>
-          <div
-            class="flex items-center gap-2 mt-8 font-semibold text-white justify-evenly"
-          >
-            <a
-              href="{{ github_3 }}"
-              target="_blank"
-              class="portfolio-link bg-primary-default"
-            >
-              <svg
-                class="w-5 h-5 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-fontSizeLarge css-zjt8k"
-                focusable="false"
-                aria-hidden="true"
-                viewBox="0 0 24 24"
-                data-testid="GitHubIcon"
-                tabindex="-1"
-                title="GitHub"
-              >
-                <path
-                  d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27"
-                ></path></svg
-              >GitHub</a
-            >
-            <a
-              href="{{ proyect_3 }}"
-              target="_blank"
-              class="portfolio-link bg-primary-gray dark:bg-primary-black"
-            >
-              <span class="bg-white rounded-full">
-                <svg
-                  class="w-5 h-5 MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiSvgIcon-fontSizeLarge css-zjt8k"
-                  focusable="false"
-                  aria-hidden="true"
-                  viewBox="0 0 24 24"
-                  data-testid="LanguageIcon"
-                  tabindex="-1"
-                  title="Language"
-                >
-                  <path
-                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56zm2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z"
-                  ></path>
-                </svg>
-              </span>
-              Website</a
-            >
-          </div>
-        </div>
-      </div>
-    </li>
+
   </ul>
+
   <div class="mt-10 align-middle">
     <a
       href="https://github.com/victordanielquino?tab=repositories"
       target="_blank"
       class="btn-primary"
-      >Ver mas trabajos en GitHub</a
-    >
+    >Ver más trabajos en GitHub</a>
   </div>
 </section>
 
-<!-- <div class="p-5 mx-auto bg-white xl:mx-40" id="proyect">
-  <div>
-    <h1 class="text-base font-semibold text-gray-500 border-b-2">PROYECTS</h1>
-    <div class="flex flex-col text-gray-500 md:flex-row">
-      <div class="w-full mb-0 md:w-1/2">
-        <swiper
-          [spaceBetween]="30"
-          [centeredSlides]="true"
-          [autoplay]="{
-            delay: 2500,
-            disableOnInteraction: false
-          }"
-          [pagination]="{
-            clickable: true
-          }"
-          [navigation]="true"
-          class="mySwiper"
-        >
-          <ng-template swiperSlide class="flex items-center justify-center"
-            ><img
-              src="../../assets/galery-proyects/pro1/1.png"
-              class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 drop-shadow-md mb-7" /></ng-template
-          ><ng-template swiperSlide class="flex items-center justify-center"
-            ><img
-              src="../../assets/galery-proyects/pro1/2.png"
-              class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 mb-7 drop-shadow-md" /></ng-template
-          ><ng-template swiperSlide class="flex items-center justify-center"
-            ><img
-              src="../../assets/galery-proyects/pro1/3.png"
-              class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 mb-7 drop-shadow-md" /></ng-template
-          ><ng-template swiperSlide class="flex items-center justify-center"
-            ><img
-              src="../../assets/galery-proyects/pro1/4.png"
-              class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 mb-7 drop-shadow-md"
-          /></ng-template>
-          <ng-template swiperSlide class="flex items-center justify-center"
-            ><img
-              src="../../assets/galery-proyects/pro1/5.png"
-              class="object-cover w-2/3 h-40 rounded-lg sm:h-56 sm:w-4/5 md:h-64 mb-7 drop-shadow-md"
-          /></ng-template>
-        </swiper>
-      </div>
-      <div
-        class="md:px-5 md:w-1/2 md:max-h-max md:border-l-2 md:border-gray-200"
-      >
-        <h1 class="p-0 m-0 text-sm font-semibold">
-          <span class="mr-3 underline">Title:</span
-          ><span class="italic">"PIZARRA DIGITAL WEB"</span>
-        </h1>
-        <h1 class="p-0 m-0 text-sm font-semibold">
-          <span class="mr-3 underline">Aplication:</span>
-          <a
-            class="italic text-teal-500 cursor-pointer"
-            href="{{ proyect_1 }}"
-            target="_blank"
-            >link</a
-          >
-        </h1>
-        <h1 class="p-0 m-0 text-sm font-semibold">
-          <span class="mr-3 underline">Repository:</span
-          ><a
-            class="italic text-teal-500 cursor-pointer"
-            href="{{ github_1 }}"
-            target="_blank"
-            >GitHub</a
-          >
-        </h1>
-        <h1 class="p-0 mb-1 text-sm font-semibold underline">Description:</h1>
-        <p class="p-0 ml-5 text-xs italic text-justify">
-          Esta es una aplicación web destina a ayudar a estudiantes de colegios
-          y profesores del area de matemáticas. Las vondades de esta aplicacion
-          se resumen en juntar algunas características de google y la api
-          mathio, la generacion de grificos de geométria análitica de geogebra y
-          la pizarra de OpenBoard. Esta aplicación esta desarrollada bajo la
-          libreria de React, se usa Sass y Material UI para el manejo de estilo
-          y componentes, se uso Firebase de Google para almacenar imagenes y
-          pdfs. La aplicación puede generar un reporte PDF desde el front.
-        </p>
-      </div>
-    </div>
-    <div></div>
-  </div>
-</div> -->

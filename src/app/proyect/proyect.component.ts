@@ -21,6 +21,19 @@ export class ProyectComponent implements OnInit {
   github_3: string =
     'https://github.com/victordanielquino/my-store-backend-nestjs';
 
+    vuce_portal_repo: string = "https://www.vuce.gob.bo/";
+    vuce_portal_site: string = "https://www.vuce.gob.bo/";
+
+    vuce_plataforma_repo: string = "https://plataforma.vuce.gob.bo/login";
+    vuce_plataforma_site: string = "https://plataforma.vuce.gob.bo/login";
+
+    colab_url: string = "https://gitlab.com/vdqj-cursos/umsa-maestria-ia/modulo-7/playstore/project-playstore/-/blob/main/notebooks/01_ingesta_playstore.ipynb?ref_type=heads";
+    airflow_demo_url: string = "https://gitlab.com/vdqj-cursos/umsa-maestria-ia/modulo-7/playstore/project-playstore/-/tree/main/src?ref_type=heads";
+    repo_data_url: string = "https://gitlab.com/vdqj-cursos/umsa-maestria-ia/modulo-7/playstore/project-playstore/-/blob/main/README.md?ref_type=heads";
+
+    firma_digital_repo: string = "https://github.com/victordanielquino/adsib-firma-front/blob/main/README.md";
+    firma_digital_site: string = "https://victordanielquino-jacobitus.netlify.app/adsib/home";
+
   constructor() {}
 
   ngOnInit(): void {}
